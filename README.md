@@ -22,6 +22,9 @@ O endereço IP é atribuído automaticamente via **DHCP**, permitindo acesso ao 
 - Protocolo HTTP
 - DHCP (Dynamic Host Configuration Protocol)
 
+#
+ ![roteador_e_arduino](roteador_e_arduino.jpeg)
+
 ---
 
 ## ⚙️ Funcionamento
@@ -52,7 +55,7 @@ Ao iniciar, o Arduino imprime:
 IP: 192.168.0.238
 2. Pelo roteador (DHCP)
 
-No painel do roteador (como você mostrou):
+No painel do roteador:
 
 Acesse a lista de clientes DHCP
 Procure pelo MAC Address configurado no código
@@ -70,15 +73,13 @@ Associe o MAC Address ao IP desejado
 
 Isso garante que o Arduino sempre terá o mesmo IP.
 
+![clientesdhcp](clientesdhcp.jpeg)
+
 🌍 Acessando o servidor
 
 Após obter o IP, basta acessar no navegador:
 
-http://192.168.0.238
-
-Resultado esperado:
-
-Hello Arduino
+![webserver](webserver.jpeg)
 
 ## 💻 Código
 
